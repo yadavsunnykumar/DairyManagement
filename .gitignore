@@ -1,0 +1,82 @@
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+*$py.class
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+test-results/
+junit.xml
+
+# Type checking and linting caches
+.mypy_cache/
+.pyright/
+.ruff_cache/
+.dmypy.json
+.pyre/
+
+# Python packaging and tooling
+pip-wheel-metadata/
+.Python
+.pybuild/
+
+# Local databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Docker local overrides
+docker-compose.override.yml
+
+# Alembic: keep migration scripts tracked
+# Do not ignore alembic/versions/
+
+# Tool caches
+.cache/
+```
+
+**Important:** Keep `alembic/versions/` tracked in Git. Those migration files are part of your database schema history and should be committed. Also, since `.env` is ignored, keep a `.env.example` file with placeholder values so other developers can configure the project.

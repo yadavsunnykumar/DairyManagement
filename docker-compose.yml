@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: dairy-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: dairy_db
+      POSTGRES_USER: dairy_user
+      POSTGRES_PASSWORD: dairy_password
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
